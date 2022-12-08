@@ -1,0 +1,37 @@
+1.Backend token-service (version : laravel 8 , php : 7.4)
+  # link : https://github.com/nur2014/token-service
+  # download token-service
+  # composer install  
+  # from db folder import token_service.sql in database
+  # check db conncetion config/database.php
+  # run command php artisan serve --port=8081  
+   it will generate url http://127.0.0.1:8081
+
+2.Backend customer-service (version :laravel 8 , php : 7.4)
+  # link : https://github.com/nur2014/customer-service
+  # download customer-service
+  # composer install  
+  # from db folder import customer_service.sql in database
+  # check db conncetion config/database.php
+  # run command php artisan serve --port=8082  
+   it will generate url http://127.0.0.1:8082
+
+3.Frontend ict-app (use node.js version : 14.17.1)
+  # link : https://github.com/nur2014/ict-app
+  # download ict-app
+  # npm install  
+  # check and confirm backend conncetion in ict-app\src\config\api_config 
+      export const authServiceBaseUrl = 'http://127.0.0.1:8081'
+      export const commonServiceBaseUrl = 'http://127.0.0.1:8082'
+  # in \node_modules\bootstrap\js\src\util\index.js 
+     const MAX_UID = 100_00_00 change it to const MAX_UID = 1000000   
+  # run command npm run serve
+
+4. login access: 
+   username : admin
+   password : 123456  
+   
+
+
+
+
